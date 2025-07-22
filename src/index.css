@@ -8,33 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Core brand colors for .NET + Azure + AI theme */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 222 84% 4.9%;
+    
+    /* Tech-inspired primary palette */
+    --primary: 220 91% 52%; /* Azure blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 220 85% 65%;
+    
+    /* Secondary purple for .NET accent */
+    --secondary: 260 80% 60%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* AI accent green */
+    --accent: 142 76% 46%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Neutral system */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8.9% 46.1%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 91% 52%), hsl(260 80% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 91% 52%) 0%, hsl(260 80% 60%) 50%, hsl(142 76% 46%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(220 14% 98%), hsl(220 14% 96%));
+    
+    /* Shadows with brand colors */
+    --shadow-glow: 0 0 40px hsl(220 91% 52% / 0.15);
+    --shadow-card: 0 4px 24px hsl(220 20% 10% / 0.08);
+    --shadow-elevated: 0 12px 48px hsl(220 20% 10% / 0.12);
+    
+    /* Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
+    /* Card and popover system */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 222 84% 4.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Border and input */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 220 91% 52%;
+    
+    /* Destructive states */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
     --radius: 0.5rem;
 
